@@ -1,0 +1,154 @@
+/* Basic styling for layout and alignment */
+body {
+    background-image: url(./images/background.avif);
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    font-family: 'Merriweather', serif ,'Times New Roman', Times, ;
+    margin: 0;
+    padding: 0;
+}
+
+.navi{
+    padding-top: 10px;
+    height: 9vh;
+    background: linear-gradient(to right,navy,black);
+
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.imge{
+
+    border: 7px solid #e9ecef;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+}
+
+/* Styling for input field and button */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Styling for repository and user information display */
+#repositories,
+#userInfo {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+}
+
+
+.repo-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+    gap: 20px;
+}
+
+/* Styling for each repo-item within the grid */
+.repo-item {
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.repo-item p {
+    margin: 0;
+    padding: 1rem;
+    
+}
+
+.repo-item strong {
+    color: blue;
+}
+
+ 
+ .language-javascript {
+    border-radius: 25px;
+    background: linear-gradient(to right,navy,black);
+    padding: 8px ;
+    margin: 50px;
+    
+}
+ 
+
+
+
+
+/* Styling for pagination controls */
+#paginationControls {
+    margin-top: 20px;
+}
+
+#paginationControls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#paginationControls button {
+    border-radius: 25px;
+    background: linear-gradient(to right,navy,black);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#paginationControls select {
+    background: linear-gradient(to right,navy,black);
+    color: wheat;
+    border-radius: 15px;
+    padding: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#paginationControls button:hover,
+#paginationControls select:hover {
+    background: linear-gradient(to right,black,navy);
+}
+
+#currentPage {
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+
+/* Styling for loaders */
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid navy; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+    display: block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+footer{
+    background: linear-gradient(to right,black,navy);
+}
